@@ -1,0 +1,13 @@
+# Sensitive Data
+.env
+.env.local
+*.key
+secrets.json
+api_keys.json
+portfolio.db
+transactions.db
+
+venv/
+__pycache__/
+*.py[cod]
+*.so
