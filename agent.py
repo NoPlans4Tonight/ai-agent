@@ -13,7 +13,7 @@ def ask_agent(prompt: str) -> str:
         messages=[
             {
                 "role": "system",
-                "content": "you are a financial research assistant helping with dividend stock analysis."
+                "content": "you are a helpful assistant."
             },
             {
                 "role": "user",
@@ -25,6 +25,7 @@ def ask_agent(prompt: str) -> str:
 
     return response.choices[0].message.content
 
+
 def interact_with_agent():
     while True:
         user_input = input("Whats currently on your mind? (type 'exit' to quit) ")
@@ -35,7 +36,7 @@ def interact_with_agent():
         print(f"\nAgent: {response}\n")
 
 if __name__ == "__main__":
-    print("💼 Dividend Research Agent")
+    print("AI Agent")
     print("=" * 50)
-    print("Ask me anything about dividend stocks!\n")
+    print("Ask me anything!\n")
     interact_with_agent()
